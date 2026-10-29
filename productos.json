@@ -1,6 +1,17 @@
 {
- "actualizado": "2026-10-27",
+ "actualizado": "2026-10-29",
  "productos": [
+  {
+   "id": "prueba-200",
+   "nombre": "Prueba",
+   "presentacion": "200",
+   "categoria": "Hogar y cacharrería",
+   "precio": null,
+   "descripcion": "",
+   "destacado": false,
+   "imagen": "img/productos/prueba-200-mvtsa2ib.jpg",
+   "origen": "propio"
+  },
   {
    "id": "acetaminofen-ag-500-mg-caja-x-100-tabletas",
    "nombre": "Acetaminofén AG",
