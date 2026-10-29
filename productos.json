@@ -2,14 +2,14 @@
  "actualizado": "2026-10-29",
  "productos": [
   {
-   "id": "prueba-200",
-   "nombre": "Prueba",
-   "presentacion": "200",
+   "id": "anunacio-1",
+   "nombre": "anunacio",
+   "presentacion": "1",
    "categoria": "Hogar y cacharrería",
    "precio": null,
    "descripcion": "",
    "destacado": false,
-   "imagen": "img/productos/prueba-200-mvtsa2ib.jpg",
+   "imagen": "img/productos/anunacio-1-mvtsfx0u.jpg",
    "origen": "propio"
   },
   {
