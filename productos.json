@@ -1,17 +1,6 @@
 {
- "actualizado": "2026-10-29",
+ "actualizado": "2026-11-04",
  "productos": [
-  {
-   "id": "prueba2-500",
-   "nombre": "Prueba2",
-   "presentacion": "500",
-   "categoria": "Medicamentos",
-   "precio": null,
-   "descripcion": "",
-   "destacado": true,
-   "imagen": "img/productos/prueba2-500-mvtsodwo.jpg",
-   "origen": "propio"
-  },
   {
    "id": "balsamo-500",
    "nombre": "Bálsamo",
