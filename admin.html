@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Administrar productos · Distri Ramírez</title>
-<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/estilos.css">
-<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="admin.css">
 </head>
 <body class="admin">
 
 <!-- Entrada -->
 <section class="entrada" id="entrada">
   <form class="entrada-caja" id="formEntrada">
-    <img src="img/logo.svg" alt="" width="56" height="56">
+    <img src="logo.svg" alt="" width="56" height="56">
     <h1>Administración</h1>
     <p>Escriba la clave para agregar o eliminar productos.</p>
     <input type="password" id="clave" placeholder="Clave" autocomplete="current-password" required>
@@ -36,7 +36,7 @@
   <div class="estado" id="estado">
     <div><strong id="estadoTitulo">Todo publicado</strong><span id="estadoTexto">El catálogo coincide con la página publicada.</span></div>
     <div class="estado-botones">
-      <button class="btn btn-oro" id="btnPublicar">Publicar en GitHub</button>
+      <button class="btn btn-oro" id="btnPublicar">Publicar cambios</button>
       <button class="btn btn-linea" id="btnDescargar">Descargar productos.json</button>
       <button class="btn-texto peligro" id="btnDescartar">Descartar cambios</button>
     </div>
@@ -91,9 +91,9 @@
     </section>
 
     <!-- GitHub -->
-    <section class="caja ancho" id="cajaGithub">
-      <h2>Conexión con GitHub</h2>
-      <p class="nota">Para que los cambios se vean en internet, el botón <b>Publicar en GitHub</b> guarda el catálogo directamente en su repositorio. Necesita un <b>token</b> (una llave) de GitHub, que se crea una sola vez:</p>
+    <section class="caja ancho" id="cajaGithub" hidden>
+      <h2>Conexión con GitHub <small>(solo soporte técnico)</small></h2>
+      <p class="nota">Para que los cambios se vean en internet, el botón <b>Publicar cambios</b> guarda el catálogo directamente en su repositorio. Necesita un <b>token</b> (una llave) de GitHub, que se crea una sola vez:</p>
       <ol class="ayuda">
         <li>Entre a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>.</li>
         <li>Nombre: <i>distri-web</i>. En <b>Repository access</b> elija <i>Only select repositories</i> y escoja el repositorio de la página.</li>
@@ -106,6 +106,8 @@
       </div>
       <label>Token<input id="ghToken" type="password" placeholder="github_pat_…" autocomplete="off"></label>
       <label class="check"><input type="checkbox" id="ghRecordar"> Recordar el token en este equipo</label>
+      <div class="form-botones"><button class="btn btn-oro" type="button" id="btnGuardarConexion">Guardar conexión en este equipo</button><button class="btn btn-linea" type="button" id="btnQuitarConexion">Quitar conexión de este equipo</button></div>
+      <p class="nota pequeno" id="estadoConexion"></p>
       <p class="nota pequeno">La clave de entrada solo oculta este panel; la verdadera protección es el token: sin él nadie puede cambiar la página publicada.</p>
     </section>
   </main>
@@ -114,8 +116,8 @@
 <input type="file" accept="image/*" id="fotoFila" hidden>
 <div class="aviso-flotante" id="toast" role="status" aria-live="polite"></div>
 
-<script src="js/config.js"></script>
-<script src="js/datos.js"></script>
-<script src="js/admin.js"></script>
+<script src="config.js"></script>
+<script src="datos.js"></script>
+<script src="admin.js"></script>
 </body>
 </html>
