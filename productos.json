@@ -2,17 +2,6 @@
  "actualizado": "2026-11-04",
  "productos": [
   {
-   "id": "balsamo-500",
-   "nombre": "Bálsamo",
-   "presentacion": "500",
-   "categoria": "Insumos médicos",
-   "precio": null,
-   "descripcion": "",
-   "destacado": false,
-   "imagen": "img/productos/balsamo-500-mvtsog2j.jpg",
-   "origen": "propio"
-  },
-  {
    "id": "acetaminofen-ag-500-mg-caja-x-100-tabletas",
    "nombre": "Acetaminofén AG",
    "presentacion": "500 mg · Caja x 100 tabletas",
